@@ -1,0 +1,117 @@
+/* Pretendard Variable */
+@font-face {
+  font-family: "Pretendard Variable";
+  src: url("/fonts/PretendardVariable.woff2") format("woff2-variations");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Pretendard Static */
+@font-face {
+  font-family: "Pretendard";
+  src: url("/fonts/Pretendard-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("/fonts/Pretendard-ExtraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("/fonts/Pretendard-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("/fonts/Pretendard-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("/fonts/Pretendard-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("/fonts/Pretendard-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("/fonts/Pretendard-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("/fonts/Pretendard-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("/fonts/Pretendard-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-display: swap;
+}
+
+/* Continuous 폰트 (기존 유지) */
+@font-face {
+  font-family: "Continuous";
+  src: url("/fonts/continuous.otf") format("opentype"),
+    url("/fonts/continuous.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* Mulmaru 폰트 (신규 추가) */
+@font-face {
+  font-family: "Mulmaru";
+  src: url("/fonts/Mulmaru.woff2") format("woff2"),
+    url("/fonts/Mulmaru.otf") format("opentype"),
+    url("/fonts/Mulmaru.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* 기본 폰트 설정 */
+:root {
+  --font-pretendard: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui,
+    Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
+}
+
+body {
+  font-family: var(--font-pretendard);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.pretendard {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui,
+    Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", sans-serif;
+}
+
+.continuous {
+  font-family: "Continuous", sans-serif;
+}
+
+.corncorn {
+  font-family: "Mulmaru", sans-serif;
+}

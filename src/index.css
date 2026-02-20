@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Ownglyph_corncorn-Rg";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2412-1@1.0/Ownglyph_corncorn-Rg.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@theme {
+  --color-city-bg: #0f172a;
+  --color-city-text: #f1f5f9;
+  --color-city-accent: #00c878;
+  --color-city-secondary: #64748b;
+  --font-display: "Ownglyph_corncorn-Rg", sans-serif;
+  --font-body: "Pretendard", sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--color-city-bg);
+  color: var(--color-city-text);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  cursor: default; /* We might add a custom cursor later */
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+::selection {
+  background-color: var(--color-city-accent);
+  color: #000;
+}
+
+.corncorn {
+  font-family: var(--font-display);
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.5; box-shadow: 0 0 10px rgba(0, 200, 120, 0.2); }
+  50% { opacity: 1; box-shadow: 0 0 20px rgba(0, 200, 120, 0.5); }
+}
+.animate-pulse-glow {
+  animation: pulse-glow 3s infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.25; }
+  50% { opacity: 1; }
+}
