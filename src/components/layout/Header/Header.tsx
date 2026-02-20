@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Navigation from "../Navigation/Navigation";
 import MobileSidebarMenu from "./MobileSidebarMenu";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);

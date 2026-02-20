@@ -4,9 +4,7 @@ import { FaGithub, FaCommentDots } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 const ContactSection = () => {
-  const [githubHover, setGithubHover] = useState(false);
   const [emailHover, setEmailHover] = useState(false);
-  const [kakaoHover, setKakaoHover] = useState(false);
   return (
     <section
       id="contact"
